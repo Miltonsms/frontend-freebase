@@ -1,8 +1,10 @@
 $( document ).ready(function() {
 
   function getFilters() {
+    console.log("getFilters called");
+
     var filters = "(all ";
-    $("input[type=checkbox]:checked").each(function() {
+    $("music:input[type=checkbox]:checked").each(function() {
       filters += " type:/" + $(this).val() + "/";
 
 
@@ -21,7 +23,7 @@ $( document ).ready(function() {
   }
 
   function musicFilter() {
-    
+
   }
 
   function searchFreebase(query, filters) {
@@ -57,12 +59,14 @@ $( document ).ready(function() {
 
 
   $("form[name='search-form']").change( function() {
-    alert();
+    // alert();
     $(".info").empty();
     var query = $( "input[name='search']" ).val();
 
     var filters = getFilters();
+    console.log(query + ", " + filters)
     searchFreebase(query, filters);
+    // musicFilter();
 
   });
 
