@@ -1,5 +1,29 @@
-
-
 .top {
-  margin-top: 50px;
+	margin-top: 50px;
+}
+.ct{
+
+	text-align:center;
+}
+h2{
+
+	text-align:center;
+}
+div.info1{
+	width:210px;
+	background-color: #FFBF00;
+	border-radius: 5px;
+	border: 2px solid #BDBDBD; 	
+}
+div.info2{
+	width:210px;
+	background-color: #FFBF00;
+	border-radius: 5px;
+	border: 2px solid #BDBDBD; 
+}
+.oculto{
+	display: none;
+}
+.oculto1{
+	display: none;
 }
